@@ -15,9 +15,9 @@
 @media (prefers-color-scheme:dark){:root{--bg:#0A0E16;--surface:#121925;--ink:#E7ECF5;--muted:#919CB2;--line:#243045;--accent:#6E8EFF;--accent-soft:#1B2647;--hero:#05080F;color-scheme:dark}}
 *{box-sizing:border-box}
 body{background:var(--bg);color:var(--ink);font:16px/1.5 "Manrope",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
-.hero{background:var(--hero);color:var(--hero-ink)}
+.hero{background:linear-gradient(90deg,rgba(5,8,15,.95),rgba(5,8,15,.6)),url(img/hero.jpg) 70% center/cover,var(--hero);color:var(--hero-ink)}
 .wrap{max-width:1040px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
-.hero .wrap{padding-block:44px 40px}
+.hero .wrap{padding-block:64px 56px}
 .eyebrow{font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--hero-muted);margin:0}
 h1{font-family:"Unbounded","Arial Black",sans-serif;font-size:clamp(26px,5vw,42px);line-height:1.15;margin:12px 0;text-wrap:balance}
 .lead{color:var(--hero-muted);max-width:52ch;margin:0}
