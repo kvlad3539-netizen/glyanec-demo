@@ -348,9 +348,9 @@ textarea{min-height:76px;resize:vertical}
 /* ---------- config ---------- */
 const TIER = "standard";
 const LV = [null,
-  {id:"start", name:"Старт", price:"12 000 ₴"},
-  {id:"standard", name:"Стандарт", price:"22 000 ₴"},
-  {id:"max", name:"Максимум", price:"32 000 ₴"}];
+  {id:"start", name:"Старт", price:"14 000 ₴"},
+  {id:"standard", name:"Стандарт", price:"26 000 ₴"},
+  {id:"max", name:"Максимум", price:"36 000 ₴"}];
 const LVL = Math.max(1, LV.findIndex(x => x && x.id === TIER));
 const T = LV[LVL];
 const has = {cabinet: LVL >= 2, boxes: LVL >= 3, remind: LVL >= 3, stats: LVL >= 3};
