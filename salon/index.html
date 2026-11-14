@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2032%2032%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23F08DB4%22%2F%3E%3Cstop%20offset%3D%22.55%22%20stop-color%3D%22%231A0F14%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%239D2C5E%22%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D%2232%22%20height%3D%2232%22%20rx%3D%2216%22%20fill%3D%22url(%23g)%22%2F%3E%3C%2Fsvg%3E">
+<style>:root{color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>Бархат · демо сайта студии красоты</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Manrope:wght@500;700;800&family=JetBrains+Mono:wght@600&display=swap">
+<style>
+:root{--bg:#F7F2F0;--surface:#FFFFFF;--ink:#1E1418;--muted:#6E5F66;--line:#E6DAD6;--accent:#9D2C5E;--accent-soft:#F6E1EA;--hero:#1A0F14;--hero-ink:#F8EEF1;--hero-muted:#CDB8C1}
+@media (prefers-color-scheme:dark){:root{--bg:#120C0F;--surface:#1C1418;--ink:#F3E9EC;--muted:#AA98A0;--line:#38292F;--accent:#F08DB4;--accent-soft:#3B1B2A;--hero:#0D080A;color-scheme:dark}}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font:16px/1.5 "Manrope",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.hero{background:linear-gradient(90deg,rgba(20,10,14,.94),rgba(20,10,14,.55)),url(img/hero.jpg) 60% center/cover,var(--hero);color:var(--hero-ink)}
+.wrap{max-width:1040px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.hero .wrap{padding-block:64px 56px}
+.eyebrow{font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--hero-muted);margin:0}
+h1{font-family:"Playfair Display",Georgia,serif;font-size:clamp(28px,5.4vw,46px);line-height:1.12;margin:12px 0;text-wrap:balance}
+.lead{color:var(--hero-muted);max-width:52ch;margin:0}
+.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;padding-block:28px 40px}
+@media (max-width:820px){.cards{grid-template-columns:1fr}}
+.card{position:relative;display:flex;flex-direction:column;gap:8px;background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:20px;text-decoration:none;color:inherit;transition:border-color .15s}
+.card:hover,.card:focus-visible{border-color:var(--accent);outline:none}
+.card.rec{border-color:var(--accent);box-shadow:inset 0 0 0 1px var(--accent)}
+.badge{align-self:flex-start;font-size:12px;font-weight:800;padding:3px 9px;border-radius:999px;background:var(--accent-soft);color:var(--accent)}
+.name{font-family:"Playfair Display",Georgia,serif;font-size:22px;font-weight:700}
+.price{font-family:"JetBrains Mono",ui-monospace,Consolas,monospace;font-size:18px;font-weight:600}
+.text{color:var(--muted);font-size:15px}
+.go{margin-top:auto;padding-top:8px;font-weight:800;color:var(--accent)}
+.note{color:var(--muted);font-size:14px;padding-bottom:32px;margin:0}
+</style>
+</head>
+<body>
+<header class="hero"><div class="wrap">
+  <p class="eyebrow">Демо сайта студии красоты</p>
+  <h1>Три варианта — выберите, что нужно вашему салону</h1>
+  <p class="lead">Каждый вариант можно открыть с телефона, записаться как клиент и посмотреть, как это выглядит для владельца.</p>
+</div></header>
+<main class="wrap">
+  <div class="cards">
+    <a class="card" href="start.html">
+      
+      <span class="name">Старт</span>
+      <span class="price">14 000 ₴</span>
+      <span class="text">Сайт с ценами и онлайн-записью. Заявки приходят в Telegram.</span>
+      <span class="go">Открыть демо →</span>
+    </a>
+    <a class="card rec" href="standard.html">
+      <span class="badge">Рекомендуем</span>
+      <span class="name">Стандарт</span>
+      <span class="price">26 000 ₴</span>
+      <span class="text">Всё из «Старта» и личный кабинет: расписание, записи, клиенты, заработок.</span>
+      <span class="go">Открыть демо →</span>
+    </a>
+    <a class="card" href="max.html">
+      
+      <span class="name">Максимум</span>
+      <span class="price">36 000 ₴</span>
+      <span class="text">Всё из «Стандарта», запись к конкретному мастеру, напоминания клиентам и статистика.</span>
+      <span class="go">Открыть демо →</span>
+    </a>
+  </div>
+  <p class="note">Название салона, адрес, мастера, цены и записи в демо примерные. В рабочей версии будут ваши.</p>
+</main>
+</body>
+</html>
