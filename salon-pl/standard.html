@@ -438,9 +438,9 @@ body.has-cart .cookie{bottom:96px}
 /* ---------- config ---------- */
 const TIER = "standard";
 const LV = [null,
-  {id:"start", name:"Старт", price:"1 990 zł"},
-  {id:"standard", name:"Стандарт", price:"3 490 zł"},
-  {id:"max", name:"Максимум", price:"4 990 zł"}];
+  {id:"start", name:"Старт", price:"1 490 zł"},
+  {id:"standard", name:"Стандарт", price:"2 990 zł"},
+  {id:"max", name:"Максимум", price:"4 490 zł"}];
 const LVL = Math.max(1, LV.findIndex(x => x && x.id === TIER));
 const T = LV[LVL];
 const has = {cabinet: LVL >= 2, boxes: LVL >= 3, remind: LVL >= 3, stats: LVL >= 3};
